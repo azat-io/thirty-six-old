@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - 'stable'
+
+notifications:
+  email:
+    recipients:
+      - to@azat.io
+    on_success: never
+    on_failure: always
+
+script:
+  - yarn test
