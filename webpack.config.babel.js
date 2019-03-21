@@ -96,8 +96,8 @@ export default {
       favicons: {
         appName: title,
         appDescription: description,
-        background: '#000',
-        theme_color: '#000',
+        background: '#999',
+        theme_color: '#999',
         icons: {
           android: true,
           appleIcon: true,
@@ -132,6 +132,24 @@ export default {
         loader: 'babel-loader',
         options: {
           cacheDirectory: true,
+        },
+      }],
+    }, {
+      test: /\.svg$/i,
+      use: [{
+        loader: 'raw-loader',
+      }, {
+        loader: 'svgo-loader',
+        options: {
+          plugins: [{
+            removeTitle: true,
+          }, {
+            convertColors: {
+              shorthex: false,
+            },
+          }, {
+            convertPathData: false,
+          }],
         },
       }],
     }],

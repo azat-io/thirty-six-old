@@ -2,7 +2,6 @@ import React from 'react'
 
 import {
   BrowserRouter as Router,
-  Redirect,
   Route,
   Switch,
 } from 'react-router-dom'
@@ -11,6 +10,9 @@ import { render } from 'react-dom'
 
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 import { normalize } from 'polished'
+
+import Home from 'containers/Home'
+import LogIn from 'containers/LogIn'
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -32,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
   html,
   body {
     font-family: 'Yandex Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
     height: 100%;
     color: ${({ theme }) => theme.textColor};
@@ -57,20 +59,19 @@ const App = () => (
   <Router>
     <ThemeProvider
       theme={{
+        border: '1px solid #54596e',
         primaryColor: '#54596e',
         primaryContrastColor: '#fff',
         textColor: 'rgba(0, 0, 0, 0.55)',
       }}
     >
-      <Switch>
-        <Route exact path={'/'} component={() => (
-          <Container>
-            <GlobalStyles />
-            <div>{'It works!'}</div>
-          </Container>
-        )} />
-        <Redirect to={'/'} />
-      </Switch>
+      <Container>
+        <GlobalStyles />
+        <Switch>
+          <Route exact path={'/'} component={Home} />
+          <Route exact path={'/login'} component={LogIn} />
+        </Switch>
+      </Container>
     </ThemeProvider>
   </Router>
 )
