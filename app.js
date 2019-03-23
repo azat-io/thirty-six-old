@@ -14,6 +14,8 @@ import { normalize } from 'polished'
 import Home from 'containers/Home'
 import LogIn from 'containers/LogIn'
 
+import './etc/i18n'
+
 const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Yandex Sans';
@@ -50,8 +52,6 @@ const GlobalStyles = createGlobalStyle`
 `
 
 const Container = styled.div`
-  display: grid;
-  grid-template-rows: 30px 1fr;
   min-height: 100%;
 `
 

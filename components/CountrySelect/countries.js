@@ -1,7 +1,3 @@
-import React from 'react'
-
-import map from 'lodash/map'
-
 import afghanistanSvg from './icons/afghanistan.svg'
 import albaniaSvg from './icons/albania.svg'
 import algeriaSvg from './icons/algeria.svg'
@@ -45,389 +41,979 @@ import colombiaSvg from './icons/colombia.svg'
 import comorosSvg from './icons/comoros.svg'
 import cookIslandsSvg from './icons/cook-islands.svg'
 import costaRicaSvg from './icons/costa-rica.svg'
+import croatiaSvg from './icons/croatia.svg'
+import cubaSvg from './icons/cuba.svg'
+import cyprusSvg from './icons/cyprus.svg'
+import czechRepublicSvg from './icons/czech-republic.svg'
+import democraticRepublicOfCongoSvg from './icons/democratic-republic-of-congo.svg'
+import denmarkSvg from './icons/denmark.svg'
+import djiboutiSvg from './icons/djibouti.svg'
+import dominicaSvg from './icons/dominica.svg'
+import dominicanRepublicSvg from './icons/dominican-republic.svg'
+import eastTimorSvg from './icons/east-timor.svg'
+import ecuadorSvg from './icons/ecuador.svg'
+import egyptSvg from './icons/egypt.svg'
+import equatorialGuineaSvg from './icons/equatorial-guinea.svg'
+import eritreaSvg from './icons/eritrea.svg'
+import estoniaSvg from './icons/estonia.svg'
+import ethiopiaSvg from './icons/ethiopia.svg'
+import fijiSvg from './icons/fiji.svg'
+import finlandSvg from './icons/finland.svg'
+import franceSvg from './icons/france.svg'
+import gabonSvg from './icons/gabon.svg'
+import gambiaSvg from './icons/gambia.svg'
+import georgiaSvg from './icons/georgia.svg'
+import germanySvg from './icons/germany.svg'
+import ghanaSvg from './icons/ghana.svg'
+import greeceSvg from './icons/greece.svg'
+import grenadaSvg from './icons/grenada.svg'
+import guatemalaSvg from './icons/guatemala.svg'
+import guineaBissauSvg from './icons/guinea-bissau.svg'
+import guineaSvg from './icons/guinea.svg'
+import guyanaSvg from './icons/guyana.svg'
+import haitiSvg from './icons/haiti.svg'
+import hondurasSvg from './icons/honduras.svg'
+import hongKongSvg from './icons/hong-kong.svg'
+import hungarySvg from './icons/hungary.svg'
+import icelandSvg from './icons/iceland.svg'
+import indiaSvg from './icons/india.svg'
+import indonesiaSvg from './icons/indonesia.svg'
+import iranSvg from './icons/iran.svg'
+import iraqSvg from './icons/iraq.svg'
+import irelandSvg from './icons/ireland.svg'
+import israelSvg from './icons/israel.svg'
+import italySvg from './icons/italy.svg'
+import ivoryCoastSvg from './icons/ivory-coast.svg'
+import jamaicaSvg from './icons/jamaica.svg'
+import japanSvg from './icons/japan.svg'
+import jordanSvg from './icons/jordan.svg'
+import kazakhstanSvg from './icons/kazakhstan.svg'
+import kenyaSvg from './icons/kenya.svg'
+import kiribatiSvg from './icons/kiribati.svg'
+import kosovoSvg from './icons/kosovo.svg'
+import kuwaitSvg from './icons/kuwait.svg'
+import kyrgyzstanSvg from './icons/kyrgyzstan.svg'
+import laosSvg from './icons/laos.svg'
+import latviaSvg from './icons/latvia.svg'
+import lebanonSvg from './icons/lebanon.svg'
+import lesothoSvg from './icons/lesotho.svg'
+import liberiaSvg from './icons/liberia.svg'
+import libyaSvg from './icons/libya.svg'
+import liechtensteinSvg from './icons/liechtenstein.svg'
+import lithuaniaSvg from './icons/lithuania.svg'
+import luxembourgSvg from './icons/luxembourg.svg'
+import macaoSvg from './icons/macao.svg'
+import madagascarSvg from './icons/madagascar.svg'
+import malawiSvg from './icons/malawi.svg'
+import malaysiaSvg from './icons/malaysia.svg'
+import maldivesSvg from './icons/maldives.svg'
+import maliSvg from './icons/mali.svg'
+import maltaSvg from './icons/malta.svg'
+import marshallIslandsSvg from './icons/marshall-island.svg'
+import mauritaniaSvg from './icons/mauritania.svg'
+import mauritiusSvg from './icons/mauritius.svg'
+import mexicoSvg from './icons/mexico.svg'
+import moldovaSvg from './icons/moldova.svg'
+import monacoSvg from './icons/monaco.svg'
+import mongoliaSvg from './icons/mongolia.svg'
+import montenegroSvg from './icons/montenegro.svg'
+import moroccoSvg from './icons/morocco.svg'
+import mozambiqueSvg from './icons/mozambique.svg'
+import myanmarSvg from './icons/myanmar.svg'
+import namibiaSvg from './icons/namibia.svg'
+import nauruSvg from './icons/nauru.svg'
+import nepalSvg from './icons/nepal.svg'
+import netherlandsSvg from './icons/netherlands.svg'
+import newZealandSvg from './icons/new-zealand.svg'
+import nicaraguaSvg from './icons/nicaragua.svg'
+import nigerSvg from './icons/niger.svg'
+import nigeriaSvg from './icons/nigeria.svg'
+import niueSvg from './icons/niue.svg'
+import northKoreaSvg from './icons/north-korea.svg'
+import norwaySvg from './icons/norway.svg'
+import omanSvg from './icons/oman.svg'
+import pakistanSvg from './icons/pakistan.svg'
+import palauSvg from './icons/palau.svg'
+import palestineSvg from './icons/palestine.svg'
+import panamaSvg from './icons/panama.svg'
+import papuaNewGuineaSvg from './icons/papua-new-guinea.svg'
+import paraguaySvg from './icons/paraguay.svg'
+import peruSvg from './icons/peru.svg'
+import philippinesSvg from './icons/philippines.svg'
+import portugalSvg from './icons/portugal.svg'
+import qatarSvg from './icons/qatar.svg'
+import republicOfMacedoniaSvg from './icons/republic-of-macedonia.svg'
+import republicOfPolandSvg from './icons/republic-of-poland.svg'
+import republicOfTheCongoSvg from './icons/republic-of-the-congo.svg'
+import romaniaSvg from './icons/romania.svg'
+import russiaSvg from './icons/russia.svg'
+import rwandaSvg from './icons/rwanda.svg'
+import saintKittsAndNevisSvg from './icons/saint-kitts-and-nevis.svg'
+import salvadorSvg from './icons/salvador.svg'
+import samoaSvg from './icons/samoa.svg'
+import sanMarinoSvg from './icons/san-marino.svg'
+import saoTomeAndPrincipeSvg from './icons/sao-tome-and-principe.svg'
+import saudiArabiaSvg from './icons/saudi-arabia.svg'
+import senegalSvg from './icons/senegal.svg'
+import serbiaSvg from './icons/serbia.svg'
+import seychellesSvg from './icons/seychelles.svg'
+import sierraLeoneSvg from './icons/sierra-leone.svg'
+import singaporeSvg from './icons/singapore.svg'
+import slovakiaSvg from './icons/slovakia.svg'
+import sloveniaSvg from './icons/slovenia.svg'
+import solomonIslandsSvg from './icons/solomon-islands.svg'
+import somaliaSvg from './icons/somalia.svg'
+import southAfricaSvg from './icons/south-africa.svg'
+import southKoreaSvg from './icons/south-korea.svg'
+import southSudanSvg from './icons/south-sudan.svg'
+import spainSvg from './icons/spain.svg'
+import sriLankaSvg from './icons/sri-lanka.svg'
+import stLuciaSvg from './icons/st-lucia.svg'
+import stVincentAndTheGrenadinesSvg from './icons/st-vincent-and-the-grenadines.svg'
+import sudanSvg from './icons/sudan.svg'
+import surinameSvg from './icons/suriname.svg'
+import swazilandSvg from './icons/swaziland.svg'
+import swedenSvg from './icons/sweden.svg'
+import switzerlandSvg from './icons/switzerland.svg'
+import syriaSvg from './icons/syria.svg'
+import taiwanSvg from './icons/taiwan.svg'
+import tajikistanSvg from './icons/tajikistan.svg'
+import tanzaniaSvg from './icons/tanzania.svg'
+import thailandSvg from './icons/thailand.svg'
+import togoSvg from './icons/togo.svg'
+import tongaSvg from './icons/tonga.svg'
+import trinidadAndTobagoSvg from './icons/trinidad-and-tobago.svg'
+import tunisiaSvg from './icons/tunisia.svg'
+import turkeySvg from './icons/turkey.svg'
+import turkmenistanSvg from './icons/turkmenistan.svg'
+import tuvaluSvg from './icons/tuvalu.svg'
+import ugandaSvg from './icons/uganda.svg'
+import ukraineSvg from './icons/ukraine.svg'
+import unitedArabEmiratesSvg from './icons/united-arab-emirates.svg'
+import unitedKingdomSvg from './icons/united-kingdom.svg'
+import unitedStatesOfAmericaSvg from './icons/united-states-of-america.svg'
+import uruguaySvg from './icons/uruguay.svg'
+import uzbekistanSvg from './icons/uzbekistan.svg'
+import vanuatuSvg from './icons/vanuatu.svg'
+import vaticanCitySvg from './icons/vatican-city.svg'
+import venezuelaSvg from './icons/venezuela.svg'
+import vietnamSvg from './icons/vietnam.svg'
+import yemenSvg from './icons/yemen.svg'
+import zambiaSvg from './icons/zambia.svg'
+import zimbabweSvg from './icons/zimbabwe.svg'
 
-// import from './icons/croatia.svg'
-// import from './icons/cuba.svg'
-// import from './icons/curacao.svg'
-// import from './icons/cyprus.svg'
-// import from './icons/czech-republic.svg'
-// import from './icons/democratic-republic-of-congo.svg'
-// import from './icons/denmark.svg'
-// import from './icons/djibouti.svg'
-// import from './icons/dominica.svg'
-// import from './icons/dominican-republic.svg'
-// import from './icons/east-timor.svg'
-// import from './icons/ecuador.svg'
-// import from './icons/egypt.svg'
-// import from './icons/england.svg'
-// import from './icons/equatorial-guinea.svg'
-// import from './icons/eritrea.svg'
-// import from './icons/estonia.svg'
-// import from './icons/ethiopia.svg'
-// import from './icons/european-union.svg'
-// import from './icons/falkland-islands.svg'
-// import from './icons/faroe-islands.svg'
-// import from './icons/fiji.svg'
-// import from './icons/finland.svg'
-// import from './icons/france.svg'
-// import from './icons/french-polynesia.svg'
-// import from './icons/gabon.svg'
-// import from './icons/galapagos-islands.svg'
-// import from './icons/gambia.svg'
-// import from './icons/georgia.svg'
-// import from './icons/germany.svg'
-// import from './icons/ghana.svg'
-// import from './icons/gibraltar.svg'
-// import from './icons/greece.svg'
-// import from './icons/greenland.svg'
-// import from './icons/grenada.svg'
-// import from './icons/guam.svg'
-// import from './icons/guatemala.svg'
-// import from './icons/guernsey.svg'
-// import from './icons/guinea-bissau.svg'
-// import from './icons/guinea.svg'
-// import from './icons/guyana.svg'
-// import from './icons/haiti.svg'
-// import from './icons/hawaii.svg'
-// import from './icons/honduras.svg'
-// import from './icons/hong-kong.svg'
-// import from './icons/hungary.svg'
-// import from './icons/iceland.svg'
-// import from './icons/india.svg'
-// import from './icons/indonesia.svg'
-// import from './icons/iran.svg'
-// import from './icons/iraq.svg'
-// import from './icons/ireland.svg'
-// import from './icons/isle-of-man.svg'
-// import from './icons/israel.svg'
-// import from './icons/italy.svg'
-// import from './icons/ivory-coast.svg'
-// import from './icons/jamaica.svg'
-// import from './icons/japan.svg'
-// import from './icons/jersey.svg'
-// import from './icons/jordan.svg'
-// import from './icons/kazakhstan.svg'
-// import from './icons/kenya.svg'
-// import from './icons/kiribati.svg'
-// import from './icons/kosovo.svg'
-// import from './icons/kuwait.svg'
-// import from './icons/kyrgyzstan.svg'
-// import from './icons/laos.svg'
-// import from './icons/latvia.svg'
-// import from './icons/lebanon.svg'
-// import from './icons/lesotho.svg'
-// import from './icons/liberia.svg'
-// import from './icons/libya.svg'
-// import from './icons/liechtenstein.svg'
-// import from './icons/lithuania.svg'
-// import from './icons/luxembourg.svg'
-// import from './icons/macao.svg'
-// import from './icons/madagascar.svg'
-// import from './icons/madeira.svg'
-// import from './icons/malawi.svg'
-// import from './icons/malaysia.svg'
-// import from './icons/maldives.svg'
-// import from './icons/mali.svg'
-// import from './icons/malta.svg'
-// import from './icons/marshall-island.svg'
-// import from './icons/martinique.svg'
-// import from './icons/mauritania.svg'
-// import from './icons/mauritius.svg'
-// import from './icons/melilla.svg'
-// import from './icons/mexico.svg'
-// import from './icons/micronesia.svg'
-// import from './icons/moldova.svg'
-// import from './icons/monaco.svg'
-// import from './icons/mongolia.svg'
-// import from './icons/montenegro.svg'
-// import from './icons/montserrat.svg'
-// import from './icons/morocco.svg'
-// import from './icons/mozambique.svg'
-// import from './icons/myanmar.svg'
-// import from './icons/namibia.svg'
-// import from './icons/nato.svg'
-// import from './icons/nauru.svg'
-// import from './icons/nepal.svg'
-// import from './icons/netherlands.svg'
-// import from './icons/new-zealand.svg'
-// import from './icons/nicaragua.svg'
-// import from './icons/niger.svg'
-// import from './icons/nigeria.svg'
-// import from './icons/niue.svg'
-// import from './icons/norfolk-island.svg'
-// import from './icons/north-korea.svg'
-// import from './icons/northen-cyprus.svg'
-// import from './icons/northern-marianas-islands.svg'
-// import from './icons/norway.svg'
-// import from './icons/oman.svg'
-// import from './icons/orkney-islands.svg'
-// import from './icons/ossetia.svg'
-// import from './icons/pakistan.svg'
-// import from './icons/palau.svg'
-// import from './icons/palestine.svg'
-// import from './icons/panama.svg'
-// import from './icons/papua-new-guinea.svg'
-// import from './icons/paraguay.svg'
-// import from './icons/peru.svg'
-// import from './icons/philippines.svg'
-// import from './icons/pitcairn-islands.svg'
-// import from './icons/portugal.svg'
-// import from './icons/puerto-rico.svg'
-// import from './icons/qatar.svg'
-// import from './icons/rapa-nui.svg'
-// import from './icons/republic-of-macedonia.svg'
-// import from './icons/republic-of-poland.svg'
-// import from './icons/republic-of-the-congo.svg'
-// import from './icons/romania.svg'
-// import from './icons/russia.svg'
-// import from './icons/rwanda.svg'
-// import from './icons/saba-island.svg'
-// import from './icons/saint-kitts-and-nevis.svg'
-// import from './icons/salvador.svg'
-// import from './icons/samoa.svg'
-// import from './icons/san-marino.svg'
-// import from './icons/sao-tome-and-principe.svg'
-// import from './icons/sardinia.svg'
-// import from './icons/saudi-arabia.svg'
-// import from './icons/scotland.svg'
-// import from './icons/senegal.svg'
-// import from './icons/serbia.svg'
-// import from './icons/seychelles.svg'
-// import from './icons/sierra-leone.svg'
-// import from './icons/singapore.svg'
-// import from './icons/sint-eustatius.svg'
-// import from './icons/sint-maarten.svg'
-// import from './icons/slovakia.svg'
-// import from './icons/slovenia.svg'
-// import from './icons/solomon-islands.svg'
-// import from './icons/somalia.svg'
-// import from './icons/somaliland.svg'
-// import from './icons/south-africa.svg'
-// import from './icons/south-korea.svg'
-// import from './icons/south-sudan.svg'
-// import from './icons/spain.svg'
-// import from './icons/sri-lanka.svg'
-// import from './icons/st-barts.svg'
-// import from './icons/st-lucia.svg'
-// import from './icons/st-vincent-and-the-grenadines.svg'
-// import from './icons/sudan.svg'
-// import from './icons/suriname.svg'
-// import from './icons/swaziland.svg'
-// import from './icons/sweden.svg'
-// import from './icons/switzerland.svg'
-// import from './icons/syria.svg'
-// import from './icons/taiwan.svg'
-// import from './icons/tajikistan.svg'
-// import from './icons/tanzania.svg'
-// import from './icons/thailand.svg'
-// import from './icons/tibet.svg'
-// import from './icons/togo.svg'
-// import from './icons/tokelau.svg'
-// import from './icons/tonga.svg'
-// import from './icons/transnistria.svg'
-// import from './icons/trinidad-and-tobago.svg'
-// import from './icons/tunisia.svg'
-// import from './icons/turkey.svg'
-// import from './icons/turkmenistan.svg'
-// import from './icons/turks-and-caicos.svg'
-// import from './icons/tuvalu.svg'
-// import from './icons/uganda.svg'
-// import from './icons/ukraine.svg'
-// import from './icons/united-arab-emirates.svg'
-// import from './icons/united-kingdom.svg'
-// import from './icons/united-nations.svg'
-// import from './icons/united-states-of-america.svg'
-// import from './icons/uruguay.svg'
-// import from './icons/uzbekistn.svg'
-// import from './icons/vanuatu.svg'
-// import from './icons/vatican-city.svg'
-// import from './icons/venezuela.svg'
-// import from './icons/vietnam.svg'
-// import from './icons/virgin-islands.svg'
-// import from './icons/wales.svg'
-// import from './icons/western-sahara.svg'
-// import from './icons/yemen.svg'
-// import from './icons/zambia.svg'
-// import from './icons/zimbabwe.svg'
-
-const countryList = [{
-  name: 'Afghanistan',
+const countries = [{
+  name: 'afghanistan',
   value: 'af',
   icon: afghanistanSvg,
 }, {
-  name: 'Albania',
+  name: 'albania',
   value: 'al',
   icon: albaniaSvg,
 }, {
-  name: 'Algeria',
+  name: 'algeria',
   value: 'dz',
   icon: algeriaSvg,
 }, {
-  name: 'American Samoa',
+  name: 'american-samoa',
   value: 'as',
   icon: americanSamoaSvg,
 }, {
-  name: 'Andorra',
+  name: 'andorra',
   value: 'ad',
   icon: andorraSvg,
 }, {
-  name: 'Angola',
+  name: 'angola',
   value: 'ao',
   icon: angolaSvg,
 }, {
-  name: 'Antigua and Barbuda',
+  name: 'antigua-and-barbuda',
   value: 'ag',
   icon: antiguaAndBarbudaSvg,
 }, {
-  name: 'Argentina',
+  name: 'argentina',
   value: 'ar',
   icon: argentinaSvg,
 }, {
-  name: 'Armenia',
+  name: 'armenia',
   value: 'am',
   icon: armeniaSvg,
 }, {
-  name: 'Aruba',
+  name: 'aruba',
   value: 'aw',
   icon: arubaSvg,
 }, {
-  name: 'Australia',
+  name: 'australia',
   value: 'au',
   icon: australiaSvg,
 }, {
-  name: 'Austria',
+  name: 'austria',
   value: 'at',
   icon: austriaSvg,
 }, {
-  name: 'Azerbaijan',
+  name: 'azerbaijan',
   value: 'az',
   icon: azerbaijanSvg,
 }, {
-  name: 'Bahamas',
+  name: 'bahamas',
   value: 'bs',
   icon: bahamasSvg,
 }, {
-  name: 'Bahrain',
+  name: 'bahrain',
   value: 'bh',
   icon: bahrainSvg,
 }, {
-  name: 'Bangladesh',
+  name: 'bangladesh',
   value: 'bd',
   icon: bangladeshSvg,
 }, {
-  name: 'Barbados',
+  name: 'barbados',
   value: 'bb',
   icon: barbadosSvg,
 }, {
-  name: 'Belarus',
+  name: 'belarus',
   value: 'by',
   icon: belarusSvg,
 }, {
-  name: 'Belgium',
+  name: 'belgium',
   value: 'be',
   icon: belgiumSvg,
 }, {
-  name: 'Belize',
+  name: 'belize',
   value: 'bz',
   icon: belizeSvg,
 }, {
-  name: 'Benin',
+  name: 'benin',
   value: 'bj',
   icon: beninSvg,
 }, {
-  name: 'Bermuda',
+  name: 'bermuda',
   value: 'bm',
   icon: bermudaSvg,
 }, {
-  name: 'Bhutan',
+  name: 'bhutan',
   value: 'bt',
   icon: bhutanSvg,
 }, {
-  name: 'Bolivia',
+  name: 'bolivia',
   value: 'bo',
   icon: boliviaSvg,
 }, {
-  name: 'Bosnia and Herzegovina',
+  name: 'bosnia-and-herzegovina',
   value: 'ba',
   icon: bosniaAndHerzegovinaSvg,
 }, {
-  name: 'Botswana',
+  name: 'botswana',
   value: 'bw',
   icon: botswanaSvg,
 }, {
-  name: 'Brazil',
+  name: 'brazil',
   value: 'br',
   icon: brazilSvg,
 }, {
-  name: 'Brunei',
+  name: 'brunei',
   value: 'bn',
   icon: bruneiSvg,
 }, {
-  name: 'Bulgaria',
+  name: 'bulgaria',
   value: 'bg',
   icon: bulgariaSvg,
 }, {
-  name: 'Burkina Faso',
+  name: 'burkina-faso',
   value: 'bf',
   icon: burkinaFasoSvg,
 }, {
-  name: 'Burundi',
+  name: 'burundi',
   value: 'bi',
   icon: burundiSvg,
 }, {
-  name: 'Cambodia',
+  name: 'cambodia',
   value: 'kh',
   icon: cambodiaSvg,
 }, {
-  name: 'Cameroon',
+  name: 'cameroon',
   value: 'cm',
   icon: cameroonSvg,
 }, {
-  name: 'Canada',
+  name: 'canada',
   value: 'ca',
   icon: canadaSvg,
 }, {
-  name: 'Cape Verde',
+  name: 'cape-verde',
   value: 'cv',
   icon: capeVerdeSvg,
 }, {
-  name: 'Central African Republic',
+  name: 'central-african-republic',
   value: 'cf',
   icon: centralAfricanRepublicSvg,
 }, {
-  name: 'Chad',
+  name: 'chad',
   value: 'td',
   icon: chadSvg,
 }, {
-  name: 'Chile',
+  name: 'chile',
   value: 'cl',
   icon: chileSvg,
 }, {
-  name: 'China',
+  name: 'china',
   value: 'cn',
   icon: chinaSvg,
 }, {
-  name: 'Colombia',
+  name: 'colombia',
   value: 'co',
   icon: colombiaSvg,
 }, {
-  name: 'Comoros',
+  name: 'comoros',
   value: 'km',
   icon: comorosSvg,
 }, {
-  name: 'Cook Islands',
+  name: 'cook-islands',
   value: 'ck',
   icon: cookIslandsSvg,
 }, {
-  name: 'Costa Rica',
+  name: 'costa-rica',
   value: 'cr',
   icon: costaRicaSvg,
+}, {
+  name: 'croatia',
+  value: 'hr',
+  icon: croatiaSvg,
+}, {
+  name: 'cuba',
+  value: 'cu',
+  icon: cubaSvg,
+}, {
+  name: 'cyprus',
+  value: 'cy',
+  icon: cyprusSvg,
+}, {
+  name: 'czech-republic',
+  value: 'cz',
+  icon: czechRepublicSvg,
+}, {
+  name: 'democratic-republic-of-congo',
+  value: 'cd',
+  icon: democraticRepublicOfCongoSvg,
+}, {
+  name: 'denmark',
+  value: 'dk',
+  icon: denmarkSvg,
+}, {
+  name: 'djibouti',
+  value: 'dj',
+  icon: djiboutiSvg,
+}, {
+  name: 'dominica',
+  value: 'dm',
+  icon: dominicaSvg,
+}, {
+  name: 'dominican-republic',
+  value: 'do',
+  icon: dominicanRepublicSvg,
+}, {
+  name: 'east-timor',
+  value: 'tl',
+  icon: eastTimorSvg,
+}, {
+  name: 'ecuador',
+  value: 'ec',
+  icon: ecuadorSvg,
+}, {
+  name: 'egypt',
+  value: 'eg',
+  icon: egyptSvg,
+}, {
+  name: 'equatorial-guinea',
+  value: 'gq',
+  icon: equatorialGuineaSvg,
+}, {
+  name: 'eritrea',
+  value: 'er',
+  icon: eritreaSvg,
+}, {
+  name: 'estonia',
+  value: 'ee',
+  icon: estoniaSvg,
+}, {
+  name: 'ethiopia',
+  value: 'et',
+  icon: ethiopiaSvg,
+}, {
+  name: 'fiji',
+  value: 'fj',
+  icon: fijiSvg,
+}, {
+  name: 'finland',
+  value: 'fi',
+  icon: finlandSvg,
+}, {
+  name: 'france',
+  value: 'fr',
+  icon: franceSvg,
+}, {
+  name: 'gabon',
+  value: 'ga',
+  icon: gabonSvg,
+}, {
+  name: 'gambia',
+  value: 'gm',
+  icon: gambiaSvg,
+}, {
+  name: 'georgia',
+  value: 'ge',
+  icon: georgiaSvg,
+}, {
+  name: 'germany',
+  value: 'de',
+  icon: germanySvg,
+}, {
+  name: 'ghana',
+  value: 'gh',
+  icon: ghanaSvg,
+}, {
+  name: 'greece',
+  value: 'gr',
+  icon: greeceSvg,
+}, {
+  name: 'grenada',
+  value: 'gd',
+  icon: grenadaSvg,
+}, {
+  name: 'guatemala',
+  value: 'gt',
+  icon: guatemalaSvg,
+}, {
+  name: 'guinea-bissau',
+  value: 'gw',
+  icon: guineaBissauSvg,
+}, {
+  name: 'guinea',
+  value: 'gn',
+  icon: guineaSvg,
+}, {
+  name: 'guyana',
+  value: 'gy',
+  icon: guyanaSvg,
+}, {
+  name: 'haiti',
+  value: 'ht',
+  icon: haitiSvg,
+}, {
+  name: 'honduras',
+  value: 'hn',
+  icon: hondurasSvg,
+}, {
+  name: 'hong-kong',
+  value: 'hk',
+  icon: hongKongSvg,
+}, {
+  name: 'hungary',
+  value: 'hu',
+  icon: hungarySvg,
+}, {
+  name: 'iceland',
+  value: 'ic',
+  icon: icelandSvg,
+}, {
+  name: 'india',
+  value: 'in',
+  icon: indiaSvg,
+}, {
+  name: 'indonesia',
+  value: 'id',
+  icon: indonesiaSvg,
+}, {
+  name: 'iran',
+  value: 'ir',
+  icon: iranSvg,
+}, {
+  name: 'iraq',
+  value: 'iq',
+  icon: iraqSvg,
+}, {
+  name: 'ireland',
+  value: 'ie',
+  icon: irelandSvg,
+}, {
+  name: 'israel',
+  value: 'il',
+  icon: israelSvg,
+}, {
+  name: 'italy',
+  value: 'it',
+  icon: italySvg,
+}, {
+  name: 'ivory-coast',
+  value: 'ci',
+  icon: ivoryCoastSvg,
+}, {
+  name: 'jamaica',
+  value: 'jm',
+  icon: jamaicaSvg,
+}, {
+  name: 'japan',
+  value: 'jp',
+  icon: japanSvg,
+}, {
+  name: 'jordan',
+  value: 'jo',
+  icon: jordanSvg,
+}, {
+  name: 'kazakhstan',
+  value: 'kz',
+  icon: kazakhstanSvg,
+}, {
+  name: 'kenya',
+  value: 'ke',
+  icon: kenyaSvg,
+}, {
+  name: 'kiribati',
+  value: 'ki',
+  icon: kiribatiSvg,
+}, {
+  name: 'kosovo',
+  value: 'xk',
+  icon: kosovoSvg,
+}, {
+  name: 'kuwait',
+  value: 'kw',
+  icon: kuwaitSvg,
+}, {
+  name: 'kyrgyzstan',
+  value: 'kg',
+  icon: kyrgyzstanSvg,
+}, {
+  name: 'laos',
+  value: 'la',
+  icon: laosSvg,
+}, {
+  name: 'latvia',
+  value: 'lv',
+  icon: latviaSvg,
+}, {
+  name: 'lebanon',
+  value: 'lb',
+  icon: lebanonSvg,
+}, {
+  name: 'lesotho',
+  value: 'ls',
+  icon: lesothoSvg,
+}, {
+  name: 'liberia',
+  value: 'lr',
+  icon: liberiaSvg,
+}, {
+  name: 'libya',
+  value: 'ly',
+  icon: libyaSvg,
+}, {
+  name: 'liechtenstein',
+  value: 'li',
+  icon: liechtensteinSvg,
+}, {
+  name: 'lithuania',
+  value: 'lt',
+  icon: lithuaniaSvg,
+}, {
+  name: 'luxembourg',
+  value: 'lu',
+  icon: luxembourgSvg,
+}, {
+  name: 'macao',
+  value: 'mo',
+  icon: macaoSvg,
+}, {
+  name: 'madagascar',
+  value: 'mg',
+  icon: madagascarSvg,
+}, {
+  name: 'malawi',
+  value: 'mw',
+  icon: malawiSvg,
+}, {
+  name: 'malaysia',
+  value: 'my',
+  icon: malaysiaSvg,
+}, {
+  name: 'maldives',
+  value: 'mv',
+  icon: maldivesSvg,
+}, {
+  name: 'mali',
+  value: 'ml',
+  icon: maliSvg,
+}, {
+  name: 'malta',
+  value: 'mt',
+  icon: maltaSvg,
+}, {
+  name: 'marshall-islands',
+  value: 'mh',
+  icon: marshallIslandsSvg,
+}, {
+  name: 'mauritania',
+  value: 'mr',
+  icon: mauritaniaSvg,
+}, {
+  name: 'mauritius',
+  value: 'mu',
+  icon: mauritiusSvg,
+}, {
+  name: 'mexico',
+  value: 'mx',
+  icon: mexicoSvg,
+}, {
+  name: 'moldova',
+  value: 'md',
+  icon: moldovaSvg,
+}, {
+  name: 'monaco',
+  value: 'mc',
+  icon: monacoSvg,
+}, {
+  name: 'mongolia',
+  value: 'mn',
+  icon: mongoliaSvg,
+}, {
+  name: 'montenegro',
+  value: 'me',
+  icon: montenegroSvg,
+}, {
+  name: 'morocco',
+  value: 'ma',
+  icon: moroccoSvg,
+}, {
+  name: 'mozambique',
+  value: 'mz',
+  icon: mozambiqueSvg,
+}, {
+  name: 'myanmar',
+  value: 'mm',
+  icon: myanmarSvg,
+}, {
+  name: 'namibia',
+  value: 'na',
+  icon: namibiaSvg,
+}, {
+  name: 'nauru',
+  value: 'nr',
+  icon: nauruSvg,
+}, {
+  name: 'nepal',
+  value: 'np',
+  icon: nepalSvg,
+}, {
+  name: 'netherlands',
+  value: 'nl',
+  icon: netherlandsSvg,
+}, {
+  name: 'new-zealand',
+  value: 'nz',
+  icon: newZealandSvg,
+}, {
+  name: 'nicaragua',
+  value: 'ni',
+  icon: nicaraguaSvg,
+}, {
+  name: 'niger',
+  value: 'ne',
+  icon: nigerSvg,
+}, {
+  name: 'nigeria',
+  value: 'ng',
+  icon: nigeriaSvg,
+}, {
+  name: 'niue',
+  value: 'nu',
+  icon: niueSvg,
+}, {
+  name: 'north-korea',
+  value: 'kp',
+  icon: northKoreaSvg,
+}, {
+  name: 'norway',
+  value: 'no',
+  icon: norwaySvg,
+}, {
+  name: 'oman',
+  value: 'om',
+  icon: omanSvg,
+}, {
+  name: 'pakistan',
+  value: 'pk',
+  icon: pakistanSvg,
+}, {
+  name: 'palau',
+  value: 'pw',
+  icon: palauSvg,
+}, {
+  name: 'palestine',
+  value: 'ps',
+  icon: palestineSvg,
+}, {
+  name: 'panama',
+  value: 'pa',
+  icon: panamaSvg,
+}, {
+  name: 'papua-new-guinea',
+  value: 'pg',
+  icon: papuaNewGuineaSvg,
+}, {
+  name: 'paraguay',
+  value: 'py',
+  icon: paraguaySvg,
+}, {
+  name: 'peru',
+  value: 'pe',
+  icon: peruSvg,
+}, {
+  name: 'philippines',
+  value: 'ph',
+  icon: philippinesSvg,
+}, {
+  name: 'portugal',
+  value: 'pt',
+  icon: portugalSvg,
+}, {
+  name: 'qatar',
+  value: 'qa',
+  icon: qatarSvg,
+}, {
+  name: 'republic-of-macedonia',
+  value: 'mk',
+  icon: republicOfMacedoniaSvg,
+}, {
+  name: 'republic-of-poland',
+  value: 'pl',
+  icon: republicOfPolandSvg,
+}, {
+  name: 'republic-of-the-congo',
+  value: 'cg',
+  icon: republicOfTheCongoSvg,
+}, {
+  name: 'romania',
+  value: 'ro',
+  icon: romaniaSvg,
+}, {
+  name: 'russia',
+  value: 'ru',
+  icon: russiaSvg,
+}, {
+  name: 'rwanda',
+  value: 'rw',
+  icon: rwandaSvg,
+}, {
+  name: 'saint-kitts-and-nevis',
+  value: 'kn',
+  icon: saintKittsAndNevisSvg,
+}, {
+  name: 'salvador',
+  value: 'sv',
+  icon: salvadorSvg,
+}, {
+  name: 'samoa',
+  value: 'ws',
+  icon: samoaSvg,
+}, {
+  name: 'san-marino',
+  value: 'sm',
+  icon: sanMarinoSvg,
+}, {
+  name: 'sao-tome-and-principe',
+  value: 'st',
+  icon: saoTomeAndPrincipeSvg,
+}, {
+  name: 'saudi-arabia',
+  value: 'sa',
+  icon: saudiArabiaSvg,
+}, {
+  name: 'senegal',
+  value: 'sn',
+  icon: senegalSvg,
+}, {
+  name: 'serbia',
+  value: 'rs',
+  icon: serbiaSvg,
+}, {
+  name: 'seychelles',
+  value: 'sc',
+  icon: seychellesSvg,
+}, {
+  name: 'sierra-leone',
+  value: 'sl',
+  icon: sierraLeoneSvg,
+}, {
+  name: 'singapore',
+  value: 'sg',
+  icon: singaporeSvg,
+}, {
+  name: 'slovakia',
+  value: 'sk',
+  icon: slovakiaSvg,
+}, {
+  name: 'slovenia',
+  value: 'si',
+  icon: sloveniaSvg,
+}, {
+  name: 'solomon-islands',
+  value: 'sb',
+  icon: solomonIslandsSvg,
+}, {
+  name: 'somalia',
+  value: 'so',
+  icon: somaliaSvg,
+}, {
+  name: 'south-africa',
+  value: 'za',
+  icon: southAfricaSvg,
+}, {
+  name: 'south-korea',
+  value: 'kr',
+  icon: southKoreaSvg,
+}, {
+  name: 'south-sudan',
+  value: 'ss',
+  icon: southSudanSvg,
+}, {
+  name: 'spain',
+  value: 'es',
+  icon: spainSvg,
+}, {
+  name: 'sri-lanka',
+  value: 'lk',
+  icon: sriLankaSvg,
+}, {
+  name: 'st-lucia',
+  value: 'lc',
+  icon: stLuciaSvg,
+}, {
+  name: 'st-vincent-and-the-grenadines',
+  value: 'vc',
+  icon: stVincentAndTheGrenadinesSvg,
+}, {
+  name: 'sudan',
+  value: 'sd',
+  icon: sudanSvg,
+}, {
+  name: 'suriname',
+  value: 'sr',
+  icon: surinameSvg,
+}, {
+  name: 'swaziland',
+  value: 'sz',
+  icon: swazilandSvg,
+}, {
+  name: 'sweden',
+  value: 'se',
+  icon: swedenSvg,
+}, {
+  name: 'switzerland',
+  value: 'ch',
+  icon: switzerlandSvg,
+}, {
+  name: 'syria',
+  value: 'sy',
+  icon: syriaSvg,
+}, {
+  name: 'taiwan',
+  value: 'tw',
+  icon: taiwanSvg,
+}, {
+  name: 'tajikistan',
+  value: 'tj',
+  icon: tajikistanSvg,
+}, {
+  name: 'tanzania',
+  value: 'tz',
+  icon: tanzaniaSvg,
+}, {
+  name: 'thailand',
+  value: 'th',
+  icon: thailandSvg,
+}, {
+  name: 'togo',
+  value: 'tg',
+  icon: togoSvg,
+}, {
+  name: 'tonga',
+  value: 'to',
+  icon: tongaSvg,
+}, {
+  name: 'trinidad-and-tobago',
+  value: 'tt',
+  icon: trinidadAndTobagoSvg,
+}, {
+  name: 'tunisia',
+  value: 'tn',
+  icon: tunisiaSvg,
+}, {
+  name: 'turkey',
+  value: 'tr',
+  icon: turkeySvg,
+}, {
+  name: 'turkmenistan',
+  value: 'tm',
+  icon: turkmenistanSvg,
+}, {
+  name: 'tuvalu',
+  value: 'tv',
+  icon: tuvaluSvg,
+}, {
+  name: 'uganda',
+  value: 'ug',
+  icon: ugandaSvg,
+}, {
+  name: 'ukraine',
+  value: 'ua',
+  icon: ukraineSvg,
+}, {
+  name: 'united-arab-emirates',
+  value: 'ae',
+  icon: unitedArabEmiratesSvg,
+}, {
+  name: 'united-kingdom',
+  value: 'gb',
+  icon: unitedKingdomSvg,
+}, {
+  name: 'united-states-of-america',
+  value: 'us',
+  icon: unitedStatesOfAmericaSvg,
+}, {
+  name: 'uruguay',
+  value: 'uy',
+  icon: uruguaySvg,
+}, {
+  name: 'uzbekistan',
+  value: 'uz',
+  icon: uzbekistanSvg,
+}, {
+  name: 'vanuatu',
+  value: 'vu',
+  icon: vanuatuSvg,
+}, {
+  name: 'vatican-city',
+  value: 'va',
+  icon: vaticanCitySvg,
+}, {
+  name: 'venezuela',
+  value: 've',
+  icon: venezuelaSvg,
+}, {
+  name: 'vietnam',
+  value: 'vn',
+  icon: vietnamSvg,
+}, {
+  name: 'yemen',
+  value: 'ye',
+  icon: yemenSvg,
+}, {
+  name: 'zambia',
+  value: 'zm',
+  icon: zambiaSvg,
+}, {
+  name: 'zimbabwe',
+  value: 'zw',
+  icon: zimbabweSvg,
 }]
 
-export default map(countryList, ({ name, value, icon }) => ({
-  name,
-  value,
-  view: () => (
-    <div>{ name }</div>
-  ),
-}))
+export default countries

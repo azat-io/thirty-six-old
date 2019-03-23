@@ -8,6 +8,7 @@ import {
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import HtmlWebpackTemplate from 'html-webpack-template'
+import SpriteLoaderPlugin from 'svg-sprite-loader/plugin'
 import WebappWebpackPlugin from 'webapp-webpack-plugin'
 
 dotenv.config()
@@ -16,6 +17,8 @@ const title = 'Thirty Six'
 const description = 'Look at your life line, motivation application'
 const url = 'https://thiry-six.org'
 const twitter = '@azat_io'
+
+const countryFlags = path.resolve(__dirname, 'components/CountrySelect')
 
 export default {
   entry: './app',
@@ -96,8 +99,8 @@ export default {
       favicons: {
         appName: title,
         appDescription: description,
-        background: '#999',
-        theme_color: '#999',
+        background: '#8b8c90',
+        theme_color: '#8b8c90',
         icons: {
           android: true,
           appleIcon: true,
@@ -117,9 +120,10 @@ export default {
     }),
     new HotModuleReplacementPlugin(),
     new CopyWebpackPlugin([{
-      from: './etc',
-      to: './',
+      from: './assets/fonts',
+      to: './fonts',
     }]),
+    new SpriteLoaderPlugin(),
   ],
   module: {
     rules: [{
@@ -136,6 +140,9 @@ export default {
       }],
     }, {
       test: /\.svg$/i,
+      exclude: [
+        countryFlags,
+      ],
       use: [{
         loader: 'raw-loader',
       }, {
@@ -151,6 +158,20 @@ export default {
             convertPathData: false,
           }],
         },
+      }],
+    }, {
+      test: /\.svg$/i,
+      include: [
+        countryFlags,
+      ],
+      use: [{
+        loader: 'svg-sprite-loader',
+        options: {
+          extract: true,
+          spriteFilename: 'flags.svg',
+        },
+      }, {
+        loader: 'svgo-loader',
       }],
     }],
   },

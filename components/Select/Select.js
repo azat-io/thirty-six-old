@@ -13,7 +13,6 @@ import get from 'lodash/get'
 import includes from 'lodash/includes'
 import isEmpty from 'lodash/isEmpty'
 import isNil from 'lodash/isNil'
-import isString from 'lodash/isString'
 import map from 'lodash/map'
 import split from 'lodash/split'
 import toLower from 'lodash/toLower'
@@ -34,8 +33,11 @@ const StyledValue = styled.div`
     : ishidden ? theme.primaryContrastColor : theme.textColor};
   border: ${({ theme, focused }) => focused ? `1px solid ${theme.primaryColor}` : theme.border};
   border-radius: 8px;
-  padding: 8px;
+  padding: 8px 20px 8px 8px;
   min-height: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
 
   &:hover,
@@ -72,6 +74,9 @@ const StyledOption = styled.div`
   color: ${({ theme, selected }) => selected ? theme.primaryContrastColor : theme.textColor};
   font-size: 15px;
   padding: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
 
   &:first-child {
@@ -124,6 +129,7 @@ const Select = ({
   name: selectName,
   multiple,
   onChange,
+  ...props
 }) => {
   const [selectValue, setSelectValue] = useState(find(options, { value: currentValue }))
   const [focused, setFocused] = useState(false)
@@ -190,7 +196,7 @@ const Select = ({
   }
 
   return (
-    <StyledSelect>
+    <StyledSelect {...props}>
       <StyledValue
         onClick={onFocus}
         focused={focused}
@@ -218,24 +224,20 @@ const Select = ({
           <StyledOptionList>
             <Scrollbars autoHeightMax={120} autoHeight>
               {
-                map(filteredOptions(), (option) => {
-                  const { name, value } = option
-                  if (isString(name)) {
-                    return (
-                      <StyledOption
-                        value={value}
-                        key={value}
-                        name={selectName}
-                        selected={value === get(selectValue, 'value')}
-                        onMouseDown={() => onChangeValue(option)}
-                      >
-                        { getHighlightedText(name, trim(filterValue)) }
-                      </StyledOption>
-                    )
-                  }
+                map(filteredOptions(), option => {
+                  const { name, value, view } = option
                   return (
-                    <StyledOption>
-                      { name({ name, value }) }
+                    <StyledOption
+                      value={value}
+                      key={value}
+                      name={selectName}
+                      selected={value === get(selectValue, 'value')}
+                      onMouseDown={() => onChangeValue(option)}
+                    >
+                      { view && view() }
+                      <span>
+                        { getHighlightedText(name, trim(filterValue)) }
+                      </span>
                     </StyledOption>
                   )
                 })
